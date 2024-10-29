@@ -22,7 +22,7 @@ loader = DirectoryLoader("docs/", glob='**/*.csv', show_progress=True, loader_cl
 #It creates a VectorstoreIndexCreator object and uses it to create a vectorstore index from the documents loaded by the DirectoryLoader object.
 index = VectorstoreIndexCreator().from_loaders([loader])
 
-# Th function takes a message as input and returns the answer from the ChatOpenAI model.
+# This function takes a message as input and returns the answer from the ChatOpenAI model.
 def answer(msg):
   PERSIST = False
   query = None
